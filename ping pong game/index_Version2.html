@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Pong (Start/Pause + Sound)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Pong</h1>
+
+    <div id="controls">
+      <button id="startPauseBtn" class="btn">Start</button>
+      <button id="muteBtn" class="btn">Mute</button>
+      <div id="scoreboard">
+        <div>Player: <span id="playerScore">0</span></div>
+        <div>Computer: <span id="computerScore">0</span></div>
+      </div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="gameCanvas" width="800" height="500" aria-label="Pong game"></canvas>
+      <div id="pausedOverlay" class="overlay hidden">Paused</div>
+    </div>
+
+    <div id="instructions">
+      Controls: Move mouse over the canvas or use Arrow Up / Arrow Down to move the left paddle. Click the canvas or press Space to Start/Pause. Refresh to reset scores.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
